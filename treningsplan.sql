@@ -1,6 +1,6 @@
-CREATE TABLE Treningsplan (
-    id INT NOT NULL AUTO_INCREMENT,
-    dag DATE,
-    okt VARCHAR(100),
-    PRIMARY KEY (id)
-);
+SELECT *
+FROM ovelse
+WHERE varighet > 90
+AND NOT repetsjoner = 15
+ORDER BY varighet DESC;
+
